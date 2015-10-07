@@ -1,0 +1,73 @@
+{
+   "checksum": "fe8345224ddcc54c8a9f903950c06e56",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13084799578174087",
+            "id": "13",
+            "name": "The OpenDaylight Platform | OpenDaylight",
+            "type": "url",
+            "url": "https://www.opendaylight.org/"
+         }, {
+            "date_added": "13073491988550936",
+            "id": "5",
+            "name": "RESTCONF Documentation",
+            "type": "url",
+            "url": "http://127.0.0.1:8181/apidoc/explorer/index.html"
+         }, {
+            "date_added": "13076785183041634",
+            "id": "9",
+            "name": "Lithium DLUX",
+            "type": "url",
+            "url": "http://127.0.0.1:8181/index.html#/login"
+         }, {
+"date_added": "13080906414907051",
+            "id": "12",
+            "name": "Downloads | OpenDaylight",
+            "type": "url",
+            "url": "http://www.opendaylight.org/software/downloads"
+         }, {
+            "date_added": "13084024207265806",
+            "id": "15",
+            "name": "Postman - Chrome Web Store",
+            "type": "url",
+            "url": "https://chrome.google.com/webstore/detail/postman/fhbjgbifli
+njbdggehcddcbncdddomop?hl=en"
+         }, {
+            "date_added": "13084799180482570",
+            "id": "10",
+            "name": "Change Keyboard Layout",
+            "type": "url",
+            "url": "http://www.wikihow.com/Change-Keyboard-Layout-in-Ubuntu"
+         }, {
+            "date_added": "13085054402104103",
+            "id": "12",
+            "name": "URL Decoder/Encoder",
+            "type": "url",
+            "url": "http://meyerweb.com/eric/tools/dencoder/"
+         } ],
+         "date_added": "13073491356093454",
+         "date_modified": "13080906414907051",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13073491356093466",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13073491356093466",
+"date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

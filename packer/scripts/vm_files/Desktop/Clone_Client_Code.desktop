@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=gnome-terminal -e "bash -i -l -c /home/odldev/bin/clone_client_project.sh"
+Name=Clone Python and Postman client code
+Comment=Clone Python and Postman client code
+Icon=dialog-warning

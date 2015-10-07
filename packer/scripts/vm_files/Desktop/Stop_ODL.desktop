@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec=gnome-terminal -e "bash -l -c /home/odldev/bin/stop_odl.sh"
+Name=Stop ODL built from git
+Comment=Stop ODL built from git
+Icon=system-shutdown
