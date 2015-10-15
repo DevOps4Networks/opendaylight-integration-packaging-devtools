@@ -48,9 +48,9 @@
       "type": "shell",
       "scripts":
         [
-          "config_virtualbox.sh",
-          "config_vagrant.sh",
-          "config_ansible.sh"
+          "scripts/vmsetup/config_virtualbox.sh",
+          "scripts/vmsetup/config_vagrant.sh",
+          "scripts/vmsetup/config_ansible.sh"
         ],
       "only":
         [
@@ -61,12 +61,12 @@
       "type": "shell",
       "scripts":
         [
-          "config_ansible.sh"
+          "scripts/vmsetup/config_ansible.sh"
         ]
     },
     {
       "type": "ansible-local",
-      "playbook_file": "install_odl.yml"
+      "playbook_file": "playbooks/install_odl.yml"
     }
   ],
   "post-processors": [

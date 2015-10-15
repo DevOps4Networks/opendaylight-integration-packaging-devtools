@@ -39,6 +39,9 @@ Clone this project locally, after reading the [contributions guidance][12], on e
 ```bash
 cd ~/git/integration-packaging/packer/
 packer build -var-file=packer_vars.json centos.json
+vagrant box add --force --name "opendaylight" opendaylight-3.0.0-centos-1503.box 
+vagrant init -m opendaylight
+vagrant up --provider=virtualbox
 ```
 
 The detail of what is happening in the Packer build, and how to use the Vagrant box that is created, is explained [here.](packer/README.markdown)
