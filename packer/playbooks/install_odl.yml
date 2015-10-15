@@ -7,6 +7,6 @@
     - opendaylight
     - williamyeh.oracle-java
 
-vars:
-  java_version: 8
+  vars:
+    java_version: 8
 
