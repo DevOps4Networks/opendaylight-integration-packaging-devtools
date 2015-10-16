@@ -37,15 +37,8 @@ cat > /tmp/requirements.yml << EOM
   src: https://github.com/DevOps4Networks/ansible-opendaylight-devtools
   version: $ansible_version
 EOM
-sudo ansible-galaxy install -r /tmp/requirements.yml
+sudo ansible-galaxy install --force -r /tmp/requirements.yml
 sudo rm /tmp/requirements.yml
-
-cat > /tmp/requirements.yml << EOM
-- name: williamyeh.oracle-java
-src: https://github.com/William-Yeh/ansible-oracle-java
-version: $ansible_version
-EOM
-sudo ansible-galaxy install -r /tmp/requirements.yml
 
 # Clean up to save space
 # NB: The point of this script is to leave Ansible and ODL's role installed

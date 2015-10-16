@@ -2,10 +2,8 @@
 - hosts: localhost
   sudo: yes
 
-#Use role from: https://github.com/William-Yeh/ansible-oracle-java
   roles:
     - opendaylight
-    - williamyeh.oracle-java
 
   vars:
     java_version: 8

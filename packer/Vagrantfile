@@ -1,14 +1,19 @@
 Vagrant.configure(2) do |config|
   config.vm.box = "opendaylight"
 
-    config.vm.provider "virtualbox" do |vb|
-        # Display the VirtualBox GUI when booting the machine
-        vb.gui = true
-        # Customize the amount of memory on the VM:
-        vb.memory = "6144"
-        vb.cpus = 4
-        # Enable the shared clipboard:
-        vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
-    end
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  # Look out for this issue https://github.com/mitchellh/vagrant/issues/3083
+  config.vm.network "private_network", type: "dhcp"
+
+  config.vm.provider "virtualbox" do |vb|
+    # Display the VirtualBox GUI when booting the machine
+    vb.gui = true
+    # Customize the amount of memory on the VM:
+    vb.memory = "6144"
+    vb.cpus = 4
+    # Enable the shared clipboard:
+    vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+  end
 
 end
