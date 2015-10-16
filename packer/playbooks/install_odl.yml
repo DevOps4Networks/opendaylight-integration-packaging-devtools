@@ -4,7 +4,9 @@
 
   roles:
     - opendaylight
+    - { role: smola.java }
 
   vars:
-    java_version: 8
+    java_packages:
+      - openjdk-8-jdk
 
