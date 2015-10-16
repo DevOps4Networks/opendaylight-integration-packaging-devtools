@@ -2,8 +2,17 @@
 - hosts: localhost
   sudo: yes
 
+  roles:
+  - { role: smola.java }
+
+  vars:
+    java_packages:
+      - openjdk-8-jdk
+      - java-1.8.0-openjdk-devel
+
   tasks:
 
   # Add odldev user in ODLDEV group and grant sudo permission
   - group: name=ODLDEV
   - user: name=odldev comment="ODL developer" uid=1010 group="ODLDEV" groups="wheel" shell=/bin/bash password=$6$rounds=656000$lL0xQ0LBywL04CXY$D4GxCJGv4P/dSpRkNJgUB/VB9XnXR94sOE9JTMuK189FrVhLbesixzhU0qfjuN3NihdH7YOs0RtsrhtEOGNey0
+

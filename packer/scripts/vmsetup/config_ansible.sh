@@ -36,6 +36,7 @@ cat > /tmp/requirements.yml << EOM
 - name: opendaylight
   src: https://github.com/DevOps4Networks/ansible-opendaylight-devtools
   version: $ansible_version
+- src: smola.java
 EOM
 sudo ansible-galaxy install --force -r /tmp/requirements.yml
 
