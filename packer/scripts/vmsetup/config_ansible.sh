@@ -36,7 +36,9 @@ cat > /tmp/requirements.yml << EOM
 - name: opendaylight
   src: https://github.com/DevOps4Networks/ansible-opendaylight-devtools
   version: $ansible_version
-- src: smola.java
+- name: redhat-smola.java
+  src: https://github.com/DevOps4Networks/ansible-java-role
+  version: $ansible_version
 EOM
 sudo ansible-galaxy install --force -r /tmp/requirements.yml
 

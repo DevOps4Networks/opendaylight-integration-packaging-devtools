@@ -66,11 +66,11 @@
     },
     {
       "type": "ansible-local",
-      "playbook_file": "playbooks/install_odl.yml"
+      "playbook_file": "playbooks/setup_devvm.yml"
     },
     {
       "type": "ansible-local",
-      "playbook_file": "playbooks/setup_devvm.yml"
+      "playbook_file": "playbooks/install_odl.yml"
     }
   ],
   "post-processors": [

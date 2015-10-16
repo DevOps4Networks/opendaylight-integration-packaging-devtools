@@ -3,12 +3,13 @@
   sudo: yes
 
   roles:
-  - { role: smola.java }
+  - { role: redhat-smola.java }
 
   vars:
-    java_packages:
-      - openjdk-8-jdk
+    redhat_java_packages:
       - java-1.8.0-openjdk-devel
+    debian_java_packages:
+      - openjdk-8-jdk
 
   tasks:
 
