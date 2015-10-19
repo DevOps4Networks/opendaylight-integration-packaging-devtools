@@ -34,10 +34,13 @@ sudo yum install -y ansible git
 ansible_version="origin/master"
 cat > /tmp/requirements.yml << EOM
 - name: opendaylight
-  src: https://github.com/DevOps4Networks/ansible-opendaylight-devtools
+  src: https://github.com/dfarrell07/ansible-opendaylight
   version: $ansible_version
 - name: redhat-smola.java
   src: https://github.com/DevOps4Networks/ansible-java-role
+  version: $ansible_version
+- name: ansible-pip
+  src: https://github.com/bobbyrenwick/ansible-pip
   version: $ansible_version
 EOM
 sudo ansible-galaxy install --force -r /tmp/requirements.yml
