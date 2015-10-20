@@ -42,6 +42,9 @@ cat > /tmp/requirements.yml << EOM
 - name: ansible-pip
   src: https://github.com/bobbyrenwick/ansible-pip
   version: $ansible_version
+- name: ansible-linux-desktop
+  src: https://github.com/DevOps4Networks/ansible-linux-desktop-role
+  version: $ansible_version
 EOM
 sudo ansible-galaxy install --force -r /tmp/requirements.yml
 
@@ -49,7 +52,5 @@ sudo ansible-galaxy install --force -r /tmp/requirements.yml
 # NB: The point of this script is to leave Ansible and ODL's role installed
 #     and ready for use by the Packer Ansible provisioner, so we can't clean
 #     up that space here. Need to clean it up in a post-install cleanup script.
-# TODO tidy up after review. We don't want to remove git when we build a Dev VM
-# sudo yum remove -y git
 sudo yum clean all -y
 sudo rm -rf /tmp/*

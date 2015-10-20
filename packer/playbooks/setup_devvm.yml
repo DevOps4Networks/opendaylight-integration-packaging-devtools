@@ -5,6 +5,7 @@
   roles:
   - { role: redhat-smola.java }
   - { role: ansible-pip }
+  - { role: ansible-linux-desktop }
 
   vars:
     redhat_java_packages:
@@ -15,6 +16,7 @@
       - python34
     debian_python3_packages:
       - python34
+    redhat_desktop: gnome
 
   tasks:
 
