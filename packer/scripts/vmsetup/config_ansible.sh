@@ -45,6 +45,12 @@ cat > /tmp/requirements.yml << EOM
 - name: ansible-linux-desktop
   src: https://github.com/DevOps4Networks/ansible-linux-desktop-role
   version: $ansible_version
+- name: ansible-eclipse
+  src: https://github.com/DevOps4Networks/ansible-eclipse
+  version: $ansible_version
+- name: ansible-dev-user-setup
+  src: https://github.com/DevOps4Networks/ansible-odl-dev-user-setup-role
+  version: $ansible_version
 EOM
 sudo ansible-galaxy install --force -r /tmp/requirements.yml
 
